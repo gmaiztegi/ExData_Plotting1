@@ -9,7 +9,7 @@ plot4 <- function(data) {
     plot(data$Date, data$Sub_metering_1, type = "l", xlab = "", ylab = "Energy sub metering")
     lines(data$Date, data$Sub_metering_2, col="red")
     lines(data$Date, data$Sub_metering_3, col="blue")
-    legend("topright", legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), col = c("black", "red", "blue"), lty = 1)
+    legend("topright", legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), col = c("black", "red", "blue"), lty = 1, bty = "n")
     
     plot(data$Date, data$Global_reactive_power, type = "l", xlab = "datetime", ylab = "Global_reactive_power")
     
